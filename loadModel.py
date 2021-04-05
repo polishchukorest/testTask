@@ -106,5 +106,5 @@ if __name__ == "__main__":
             if predict(model, waveform_, device, labels) != -1:
                 count_far += 1
 
-    print(f"train_checks: {count_cases_train}, score = {score}, frr = {count_frr}")
-    print(f"other_checks: {count_cases_other}, far = {count_frr} ")
+    print(f"train_checks: {count_cases_train}, score = {score}, frr = {count_frr}/{count_cases_train}")
+    print(f"other_checks: {count_cases_other}, far = {count_frr}/{count_cases_other} ")
